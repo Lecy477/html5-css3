@@ -1,0 +1,32 @@
+@charset "UTF8";
+
+body{
+    background-color: antiquewhite;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1{color: rgb(145, 86, 9);
+    font-size: 22px;
+    font-weight: 900;
+    text-align: center;
+    }
+     h1#titulo-principal{
+        background-color:antiquewhite;
+      color:rgb(77, 45, 2) ;  
+      font-style: italic;
+      text-align: center;
+      font-size: 25px;
+     }
+     h2{
+        font-size: 20px;
+        font-style: oblique;
+     }
+     h2.topico2{
+        background-color: rgb(77, 45, 2);
+        color: antiquewhite;
+        text-align: left;
+     }
+      .paragrafo{
+        text-align: justify;
+        font-weight: 600;
+        font-style: oblique;
+      }

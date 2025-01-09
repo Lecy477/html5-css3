@@ -1,0 +1,61 @@
+@charset "UTF-8";
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html, body {
+    height: 100vh;/*altura total do navegador*/
+    width: 100vw;/*largura total do nagegador*/
+}
+
+body{
+    background: url('../imagens/fundo-madeira.jpg') no-repeat top center;
+    background-size: cover;/*cover para cobrir a tela inteira*/
+    background-attachment: fixed; /*fundo fixo*/
+} 
+
+main {
+   height: 100vh;
+   position: relative;/*posicionamento de fora relativo
+    posicionamento absoluto de dentro*/
+}
+
+section#telefone {/*configuração do celular*/
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* transformação da caixa azul, para posicionar ao centro.*/
+
+   height: 627px;
+    width: 311px;
+    background: url('../imagens/frame-iphone.png') no-repeat; /*no-repeat: para não repetir a imagem*/
+   /*Para saber o tamanho exato da imagem abra a imagem com o gimp/imagem/propriedades da imagem*/
+}
+
+iframe#tela{
+    position: relative;
+    top: 80px;
+    left: 22px;
+    width: 267px;
+    height: 471px;
+}
+
+section#redes-sociais{
+    text-align:left;/*Pode colocar os ícones do lado que quiser*/
+}
+
+section#redes-sociais img {
+    width: 50px;
+    margin: 10px;
+    border-radius: 50%;/*trnsforma o botão quadrado em redondo*/
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.401);
+    box-sizing: border-box; /*Para fazer uma animação nos ícones, pois eles estão fora da caixa.*/
+}
+section#redes-sociais img:hover{
+    border: 2px solid rgb(236, 229, 229);
+    transform: translate(-3px, -3px);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.908);
+    transition: transform .2s, border 1s;
+}

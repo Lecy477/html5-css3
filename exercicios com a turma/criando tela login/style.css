@@ -1,0 +1,100 @@
+@charset "UTF-8";
+*{
+    margin: 0;/* Este campo aqui serve para retirar as configurações dos navegadores, zerando as configurações dos navegadores e encostando o texto junto a borda da tela.*/
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+body{
+    background-color: rgb(201, 119, 11);
+    background-size: cover;/*tamano da imagem cobrir a tela toda*/
+    background-position: center;/*centralizar a posição da imagem do fundo no centro*/
+    min-height: 100vh; /*altura mínima background ocupar a tela toda 100vh*/
+    display: flex;/* centraliza a div*/
+    align-items: center;/*alinhamneto na horizontal*/
+    justify-content: center;/*alinhamento na vertical*/
+}
+.container{
+    width: 420px;/*largura*/
+    background:transparent;/*fundo transparente*/
+    border: 2px solid rgba(255,255, 255, .2);/*borda fina 2px solid*/
+    backdrop-filter: blur(20px);/*cria um filtro tipo embaçado*/
+    border-radius: 10px;/* arredonda as pontas*/
+    padding: 30px 40px;/* afastamento interno, afasta os itens 30px de altura e 40px de largura*/
+}
+h1{
+    font-size: 36px;
+    text-align: center;
+    color: white;
+
+}
+.input-container{
+    position: relative;/*posição relativa*/
+    width: 100%;/*largura*/
+    height: 50px;/*altura*/
+    margin: 30px 0;/*margin em cima e embaixo*/
+
+}
+.input-container input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;/*borda linha ao redor do campo pra colocar a senha*/
+    border: 2px solid rgba(255,255, 255, .2);
+    border-radius: 10px;
+    font-size: 16px;
+    color: white;
+    padding: 20px 45px 20px 20px;/* 20 em cima, 45 lado direito, 20 lado esquerdo, 20 lado esquerdo*/
+
+}
+.input-container input::placeholder{
+    color:white;
+}
+.input-container img{
+    position:absolute ;
+    right: 24px;
+    top: 20%;
+    margin-top: 5px;
+}
+.input-container a{
+    font-size: 16px;
+    margin-top: 5px;
+    color: white;
+    text-decoration:none ;
+}
+.input-container a:hover{
+    text-decoration: underline;
+
+}
+
+    
+    .submit-button:hover{
+        background-color: #13002a; /*muda a cor do botão quando coloco o mause em cima*/
+
+    }
+    .register-link p {
+        font-size: 16px;
+        color: white;
+        font-weight: 300;
+    }
+    .register-link p a {
+        font-size: 16px;
+        color: white;
+        font-weight: 500;
+    }
+    .register-link{
+    text-align: center;
+    margin: 20px 0;
+    }
+    .register-link p a {
+        font-size: 16px;
+        color: white;
+        font-weight: 700;
+        text-decoration: underline;
+    }
+    .register-link p a:hover{
+        text-decoration: underline;
+    }
+    

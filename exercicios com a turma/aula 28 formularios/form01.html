@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criando o primeiro Formulário</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+   <h1>Meu primeiro formulário, com nome e sobrenome</h1> <!--action ação-->
+   <form action="cadastro.php" method="POST" autocomplete="off"> <!--autocomplete serve para desligar a caixa de nome que aparece quando vamos escrever no formulário-->
+<p><label for="inome">Nome:</label> <!--Dentro do for vamos colocar o id ou seja a identificação do nome-->
+<input type="text" name="nome" id="inome"></p> <!--input serve para criar a caixa de texto do formulário--> 
+<!--inome o i serve para identificar o nome, colocar o i é opcional-->
+<p><label for="isobrenome">Sobrenome:</label> <!--name é muito importante para o php e para o html. Já o id que é identificão do nome é muito importante para o JavaScript-->
+<input type="text" name="sobrenome" id="isobrenome"></p>
+<p><input type="submit" value="Enviar"></p> <!--submit submete os dados para a ação do php-->
+
+
+   </form>
+    
+
+
+
+
+
+
+
+
+</body>
+</html>

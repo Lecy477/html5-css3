@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário 05</title>
+</head>
+<body>
+   <h1>Formulário usando checkbox, checked e input type="radio"</h1> 
+<form action="cadastro.php" method="get">
+    <fieldset>
+        <legend>Sexo</legend>
+        <input type="radio" name="sexo" id="imasculino" value="M"> <label for="imasculino">Masculino</label> 
+        <!--<input type="radio" serve para adicionar formulário para marcar apenas uma opção.Só pode escolher um deles, e o name deles devem serem escrito o mesmo.-->
+        <!--checked serve para deixar um campo já marcado, muito usado em termo de concordância de contrato-->
+        <input type="radio" name="sexo" id="ifeminino" value="F" checked> <label for="ifeminino">Feminino</label>
+    </fieldset>
+<fieldset>
+    <legend>Esportes favoritos</legend>
+    <input type="checkbox" name="futebol" id="ifutebol"> <label for="ifutebol">Futebol</label><!--com o label eu posso só clicar no nome do esporte que já marca o quadradinho-->
+    <input type="checkbox" name="basquete" id="ibasquete"><label for="ibasquete"> Basquete</label>
+    <input type="checkbox" name="natacao" id="inatação"> <label for="inatação">Natação</label>
+    <input type="checkbox" name="volei" id="ivolei" checked> <label for="ivolei">Voléi</label>
+    <input type="checkbox" name="tenis" id="itenis"> <label for="itenis">Tênis</label>
+    <input type="checkbox" name="futsal" id="ifutsal"> <label for="ifutsal">Futsal</label>
+    <!--Para fazer os ícones em uma coluna um abaixo do outro é só colocar uma quebra de linha com br-->
+</fieldset>
+<p>
+    <input type="submit" value="Enviar">
+    <input type="reset" value="Limpar">
+</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,31 @@
+@ charset = "UTF-8";
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    text-align: center;
+    font-style: italic;
+    font-weight: bolder;
+    color: black;
+}
+
+h2{ font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    text-align: center;
+    font-style: italic;
+    font-weight: bolder;
+    color: rgb(87, 84, 84);}
+
+p{
+    text-align: justify;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: bold;
+    color: black;
+}
+
+img{
+    
+    padding: auto;
+}
+body{background-color: beige;}

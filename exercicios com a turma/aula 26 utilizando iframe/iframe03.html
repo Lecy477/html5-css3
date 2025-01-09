@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navegação no iframe</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+                    }
+                    iframe#tela{
+                        width: 95vm;
+                        height: 400px;
+                        border: 2px solid black;
+                    }
+    </style>
+</head>
+<body>
+    <h1>Faça uma escolha</h1>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet provident doloremque delectus fugiat recusandae, facere omnis nesciunt et rem ex necessitatibus ducimus enim accusamus error cum. Mollitia neque odio deserunt!</p>
+<ul>
+    <li><a href="paginas-extras/pag01.html" target="frame">Primeira página</a></li>
+    <li><a href="paginas-extras/pag02.html" target="frame">Segunda página</a></li>
+    <li><a href="paginas-extras/pag03.html" target="frame">Terceira página</a></li>
+</ul>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium repellat deserunt inventore dolor reprehenderit architecto at quidem? Rem natus ratione voluptatum libero corporis molestiae laboriosam pariatur omnis! Id, libero qui.</p>
+
+<iframe id="tela" name="frame" srcdoc="<h1>Escolha uma das opções acima</h1>
+    <p>
+         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis eaque soluta numquam, veniam iure voluptas quam sunt laborum, fuga, cupiditate dolorem vel voluptatem minima quia dignissimos. Vitae placeat suscipit in.
+         <img src='imagens/rosas.jpg'> </p>  ">
+        
+         
+    <p>Infelizmente seu navegador não é compatível com iframe.</p>
+</iframe>
+    
+<!--srcdoc é um parâmetro que serve para colocar código html e css dentro do iframe-->
+
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus saepe nisi facere nihil officiis asperiores sit, ad ipsa, repellendus totam ullam est debitis ab. Atque autem dolore nemo maxime esse.</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam tempora corrupti cumque laborum vero recusandae quod eum reiciendis architecto amet, unde ducimus facilis hic numquam. Totam error reiciendis impedit ex.</p>
+<!--Primeiros sites que aparecem no google são pagos e os outros são chamados Conteúdos orgânicos que são os sites que foram bem desenvolvidos e por isso ocupa os primeiros lugares no google. O google faz uma análise do site e vê se qual o lugar que ele vai ocupar.
+ Nunca monte um site com uso de muitos iframes, pois o google pode apresentar problemas de indexação. Para conteúdos importantes, evite o uso de iframe.
+ Existe também o problema da acessibilidade, muitos softwares leitores de tela, apresenta problemas para fazerem a leitura dos iframes. Também existe o problema da usabilidade, onde alguns navegadores se confundem ao acessar a página do iframe, e em voltar para a página inicial do iframe ou do site anterior. Ou se confunde com o site que tem target_blank que é para abrir em uma janela nova, alguns navegadores não entendem onde é para abrir a janela nova, se é para voltar pra página principal ou abrir nova aba. Ter o cuidado de colocar no iframe sites que são responsivos e que possui segurança. -->
+</body>
+</html>

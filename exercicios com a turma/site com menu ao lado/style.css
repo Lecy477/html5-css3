@@ -1,0 +1,171 @@
+
+/* Reset Global */
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;/*escrola ou seja faz movimentação do ícone do menu, para o conteúdo correspondente ao ícone clicado*/
+}
+body{
+    border: 2px solid gray;/*Serve para marcar o documento criando uma linha ao redor do body, para agente não se perder no documento. Depois do estilo agente exclui*/
+}
+
+/* Eetilos do cabeçalho */
+header{
+padding: 5px;
+text-align: center;
+}
+.logo h2{
+    color: #fff;
+}
+.wrapper{
+    position: fixed;/*fixa o menu no topo*/
+    top: 0; /*zera o top*/
+    right: 0;/*zera o right*/
+    left: 0;/*zera o left, tira os espaços para ficar mais bonito com o menu fixo*/
+    display: flex;
+    align-items: center;
+    justify-content: space-around;/*Afasta o h2 que é o (menu site) dos itens do nav*/
+    background-color: #2c405e;
+    box-shadow: 2px 5px 6px #ddd;
+}
+.header-content{
+    display: flex;/*Coloca os itens um ao lado do outro*/
+    padding: 15px;
+    /* border: 1px solid #ccc; */
+}
+nav{
+    display: flex;/*Coloca os itens um ao lado do outro*/
+    width: 100%;/*largura total da tela, Para caber todos os itens*/
+    justify-content: center;/*alinha os itens no centro*/
+    /* border: 1px solid #ccc; */
+}
+nav ul{
+    display: flex;
+list-style: none;/*Retira os pontinhos da lista*/
+padding: 0;
+width: 100%;
+}
+
+nav li{
+    margin: 0 20px;
+}
+nav a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* estilos da seção */
+.section-wrapper{
+    display: flex;
+    gap: 1.5rem;/*Espaço entre o conteúdo que está ao lado do outro*/
+    padding: 10px;
+    margin-top: 60px;
+    /* border: 1px solid #ccc; */
+}
+
+.aside-bar{
+    display: flex;
+    flex-direction: column;/*divide em coluna */
+    width: 500px;/*largura da coluna*/
+    padding: 10px;
+    background-color: #333;
+    box-shadow:5px 6px 8px #ddd;
+    /* border: 1px solid #ccc; */
+}
+.aside-others{
+    margin-top: 20px;
+}
+.aside-others h2, .aside-title{
+    color: #fff;
+    text-align: center;
+}
+.aside-bar p{
+    text-align: start;/*Coloca tudo pra direita*/
+    margin-top: 40px;
+    color: #fff;
+}
+
+/* Conteúdo da seção */
+.section-content{
+    display: flex;
+    width: 100%;
+    flex-direction: column;/*divide em coluna, coloca os itens um abaixo do outro */
+    /* border: 1px solid #ccc; */
+    padding: 10px;
+}
+
+.section{
+    text-align: center;
+    background-color: #fff;
+    /* border: 1px solid #ccc; */
+    padding: 50px;
+    width: 100%;
+}
+.section:target{/*O pseudo target serve para colorir os itens, de acordo eu vou clicando no nome do menu, vai selecionando*/
+    background-color: #e4e3e3;
+}
+
+/* Estilos do rodapé */
+
+.footer-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #333;
+    padding: 15px;
+}
+
+.footer-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.footer-title{
+    width: 10%;
+    color: #fff;
+    margin: 20px 20px;
+}
+.nav-footer ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.nav-footer ul li a:hover {
+    color: #c77e12;
+}
+
+/* Responsividade */
+
+@media screen and (max-width:768px){
+.wrapper{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-content{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.footer-title{
+    width: 50%;
+
+}
+.nav-footer ul{
+    display: flex;
+    flex-direction: column;
+}
+.nav-footer ul li{
+    margin: 10px;
+}
+}

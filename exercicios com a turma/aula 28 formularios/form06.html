@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário 6</title>
+</head>
+<body>
+    <h1>Formulário com elementos color, range e file</h1>
+    <form action="cadastro.php" method="post">
+<p>
+    <label for="icor">Cor:</label>
+    <input type="color" name="cor" id="icor" value="#f071f0"> 
+</p>
+<!--<input type="color" usado para campo de cor-->
+<p>
+    <label for="inivel">Nível de Satisfação:</label>
+    <input type="range" name="nivel" id="inivel" min="1" max="5" value="1">
+</p>
+<!--input type="range" usando para nível de sastifação ou alguma outra coisa que pode colocar a barra para preencher com com barra de nível-->
+
+<p>
+    <label for="ifoto">Foto de perfil</label>
+    <input type="file" name="foto" id="ifoto">
+</p>
+<!--input type="file" para enviar arquivo
+Obs. para utilizar o input file deve se utilizar o method post.-->
+<p><input type="submit" value="Enviar">
+<input type="reset" value="Limpar">
+</p>
+
+
+
+
+
+
+
+
+
+
+
+
+    </form>
+</body>
+</html>

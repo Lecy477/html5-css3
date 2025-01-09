@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Imagem flexível">
+    </picture>
+
+    <h1>Reproduzindo Áudio</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML5.</p>
+    <audio preload="metadata" autoplay controls loop>
+        <source src="audios/Tu És + Águas Purificadoras.mp3" type="audio/mpeg">
+        <source src="audios/Tu-És-Águas-Purificadoras.ogg" type="audio/ogg">
+        <source src="audios/Tu-És-Águas-Purificadoras.wav" type="audio/wav">
+        <p>Infelizmente seu navegador não consegue reproduzir áudio. <a href="midia/guanacast-33.mp3">Clique aqui para baixar o arquivo MP3</a></p>
+    </audio>
+    
+    <h1>Inserindo vídeos hospedados localmente</h1>
+    <p>Este vídeo está hospedado no meu próprio servidor. </p>
+
+    <video width="560" poster="imagemvideo/fotovideo.png" controls autoplay loop>
+        <source src="videos/Tu És + Águas Purificadoras.mp4" type="video/mp4">
+        <source src="videos/Tu És + Águas Purificadoras   Fhop Music , Débora Rabelo, Hamilton Rabelo   Vídeo Letr.m4v" type="video/m4v">
+        <source src="videos/Tu És + Águas Purificadoras.webm" type="video/webm">
+        <source src="videos/Tu És + Águas Purificadoras   Fhop Music , Débora Rabelo, Hamilton Rabelo   Vídeo Letr.ogv" type="video/ogv">
+        <p>Seu navegador não tem compatibilidade com reprodução de vídeos.</p>
+    </video>
+    <p>O ideal é você ter um canal no youtube para hospedar seus vídeos para seu site ficar leve e não consumir seus dados de tráfego.</p>
+
+    <h1>Inserindo vídeos do YouTube</h1>
+    <p>Incorporando vídeos do youtube através do ícone incorporar.</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/eF9Qoc6p_4Q" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/pVJ5hKI0STo?si=kbKxnytcoiX7uDEN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+   
+</body>
+</html>

@@ -1,0 +1,90 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+:root{
+  --cor0: ;
+  --cor1: ;
+  --cor2: ;
+
+  --fonte01: ;
+  --fonte-destaque:"Pacifico", cursive; ;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Updock&display=swap');
+body {
+   width: 100vw;
+   height: 100vh;
+   background-color: rgb(249, 249, 252);
+}
+h1 {
+  padding-top: 50px;
+  margin: auto;
+  text-align: center;
+  font-size: 3em;
+  font-family:'Pacifico';
+}
+.label{
+   margin: 16px;
+   font-size: 1.5em;
+}
+.grupo {
+  margin: auto;
+  width: 500px;
+  height: 60vh;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  padding-top: 40px 50px;
+  border-radius: 8px;
+  background-color: rgba(146, 143, 148, 0.034);
+    box-shadow: 0 0 8px 0 black;
+  margin-top: 80px;
+}
+
+
+
+.estilo {
+  position: relative;
+  width: 100%;
+  height: 50%;
+  margin: 15px 0;
+}
+.estilo input {
+  width: 94%;
+  height: 100%;
+  background: transparent;
+  border: 2px solid rgba(163, 17, 17, 0.2);
+  border-radius: 8px;
+  font-size: 1.3em;
+  color: rgb(25, 11, 171);
+  padding: 20px 50px 20px 20px; /* 20 em cima, 45 lado direito, 20 lado esquerdo, 20 lado esquerdo*/
+  margin: 15px;
+}
+.tipo{
+   margin-bottom: 10px;
+   margin-left: 100px;
+   align-items: center;
+   justify-content: center;
+   text-align: center;
+   font-size: 1.5em;
+   padding: 8px 10px;
+   margin-top: 0px;
+   cursor: pointer;
+   color: blue;
+}
+
+#icon {
+  position: absolute;
+  top: 49%;
+  right: 20px;
+  transform: translate(-50%);
+  background: url(../imagens/invisivel.png);
+  background-size: cover;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+#icon.visivel {
+  background: url(../imagens/visivel.png);
+  background-size: cover;
+}

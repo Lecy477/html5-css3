@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Formulário 02</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Updock&display=swap');
+    </style>
+    
+</head>
+<body>
+    <h1>Formulário com usuário e senha </h1>
+
+    <div class="grupo">
+        <form action="cadastro.php" method="post" autocomplete="on" > <!--autocomplete dentro do form tem 2 opções on e off-->
+        <!--method get deve ser usado quando os dados não forem sensivéis(pessoais), quando for enviar dados de um site com até 3000 mil letras/ quando se tem um link compartilhável usa get e -->
+        
+        <!--post deve ser usado para dados sensíveis/ não aparecer dados na url/ usar para envio de arquivos/-->
+        <div class="estilo"> <!--Pode usar a div também em vez do paragráfo-->
+        <label for="iusuario" class="label">Usuário:</label>
+        <input type="text" name="usuario" id="iusuario" required minlength="4" maxlength="50" size="50" placeholder="nome de usuário" autocomplete="username"> <!--name é importante para fazer a ligação com o html e o php id é importante para fazer a relação com o label e o JavaScript.
+        REQUIRED OU SEJA REQUERIDO, MINLENGTH MINIMO DE LETRAS E MAXLENGTH MAXIMO DE LETRAS.-->
+        </div>
+        <!--Required quer dizer preenchimento obrigatório-->
+        
+        <div class="estilo">
+         <!--Pode usar a div também em vez do paragráfo-->
+                
+        <label for="isenha" class="label">Senha:</label>
+        <input type="password" name="senha" id="isenha" required minlength="8" maxlength="20" size="10" placeholder="mínimo 8 letras" autocomplete="current-password"> <!--size quantidade de letras que vai mostrar. placeholder texto dentro da caixa-->
+        <div id="icon" onclick="invisivelVisivel()" ></div>
+        </div> <!--autocomplete="current-password" significa senha atual ou pode colocar autocomplete="new-password" nova senha. Password é para esconder a senha-->
+        
+        <div> <!--Pode usar a div também em vez do paragráfo-->
+        <input type="submit" value="Enviar" class="tipo"> <!--submit é para enviar os dados-->
+        <input type="reset" value="Limpar" class="tipo"> <!--reset é um botão de limpar-->
+        </div>
+        
+        </form>
+    </div>
+<script src="script.js"></script>
+</body>
+</html>

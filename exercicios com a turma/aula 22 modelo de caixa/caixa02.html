@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="Pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags Semântica</title>
+    <style>
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: azure;
+    margin: 0px;
+}
+header{
+    background-color: rgb(100, 108, 108);
+    padding: 10px;
+    margin: 10px;
+}
+main{
+    background-color: rgb(75, 104, 104);
+    padding: 10px;
+    margin: 10px;
+    border-radius: 20px; /*Arredonda as bordas da caixa*/
+}
+article{
+    background-color: azure;
+    padding: 5px;
+    border-radius: 10px 50px;
+}
+article > aside{
+    background-color: rgb(39, 115, 115);
+}
+nav{
+    background-color: rgb(130, 232, 232);
+    padding: 3px;
+    box-shadow: 5px  3px  7px 1px black; /*Cria uma sombra na minha caixa. Observação a cor da sombra sempre será preta, a sombra não pode ter uma cor sólida, tem que ter um efeito transparente*/
+    }
+    nav > a{
+       text-decoration: none; /*retira a decoração*/
+       color: white;
+       font-weight: bold;
+       margin-right:  40px;/*separa um link do outro*/
+          }
+          nav > a:hover{
+            text-decoration: underline;
+          }
+          footer{
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 1px;
+            margin: 0px;
+          }
+          footer > p{
+            margin: 0px;
+          }
+          /*POsso também adicionar sombra em qualquer tag. Vamos colocar no h1 só para fazer um teste*/
+          h1{
+
+          }
+          div#circulo{
+            height: 250px;
+            width: 250px;
+            background-color: rgb(36, 153, 153);
+            margin:10px;
+            border-radius: 100%;
+            p{
+                font-size: 50px;
+                text-align: center;
+                           }
+
+          }
+          div#quadrado{
+            height: 250px;
+            width: 250px;
+            background-color: rgb(3, 50, 50);
+            margin:10px;
+            p{
+                font-size: 50px;
+                text-align: end;
+            }
+            
+          }
+          div#retangulo{height: 250px;
+            width: 500px;
+            margin: 10px;
+            background-color: rgb(120, 212, 212);
+            p{
+                font-size: 50px;
+                text-align: end;
+            }
+
+          }
+    </style>
+</head>
+<body>
+    <!--Ao usar tags semânticas -->
+    <header>
+        <h1>Aprendendo a estruturar meu site com tags semânticas</h1>
+        <nav>
+            <a href="https://www.estudonauta.com/">Teste 1</a>
+            <a href="#">Teste 2</a>
+            <a href="#">Teste 3</a>
+            <a href="#">Teste 4</a>
+            <a href="#">Teste 5</a>
+        </nav>
+</header><!--header é cabeçalho-->
+    <main>
+        <section id="notícias"></section>
+        <article>
+            <h2>Principais notícias sobre o Rio Grande do Sul</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure vero optio, libero veritatis sunt minima deserunt assumenda? Voluptate ab pariatur quasi quaerat ullam! Dolorem delectus error nam vitae cum in.</p>
+            <aside>Escrito por Lecy de Souza</aside>
+        </article>
+        <section id="esporte"></section>
+        <section id=""></section>
+    </main><!--main conteúdo principal-->
+    <footer></footer>
+    <div id="circulo">
+        <p style="color: rgb(235, 15, 176);">Círculo</p>
+    </div>
+    <div id="quadrado">
+        <p  style="color: white;">Quadrado</p>
+    </div>
+    <div id="retangulo"><p style="color: rgb(216, 13, 20);">Retângulo</p>
+    </div>
+    
+</body>
+</html>
